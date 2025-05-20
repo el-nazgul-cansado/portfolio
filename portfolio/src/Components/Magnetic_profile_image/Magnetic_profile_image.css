@@ -1,0 +1,15 @@
+.circle-container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center; /* Asegura que el SVG esté centrado horizontalmente */
+  align-items: center; /* Asegura que el SVG esté centrado verticalmente */
+  position: relative;
+  overflow: visible;
+}
+
+.circle-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}

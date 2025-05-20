@@ -1,0 +1,56 @@
+[
+    {
+        "id": 0,
+        "name": "Angular",
+        "image": "/assets/images/certificates/angular.png",
+        "code": null
+    },
+    {
+        "id": 1,
+        "name": "ReactJs en Coder",
+        "image": "/assets/images/certificates/reactJS_coder.png",
+        "code": null
+    },
+    {
+        "id": 2,
+        "name": "Python",
+        "image": "/assets/images/certificates/python.png",
+        "code": null
+    },
+    {
+        "id": 3,
+        "name": "Javescript",
+        "image": "/assets/images/certificates/javascript.png",
+        "code": null
+    },
+    {
+        "id": 4,
+        "name": "ReactJS en UTN",
+        "image": "/assets/images/certificates/reactJS_UTN.png",
+        "code": null
+    },
+    {
+        "id": 5,
+        "name": "Desarrollo web",
+        "image": "/assets/images/certificates/desarrollo_web.png",
+        "code": null
+    },
+    {
+        "id": 6,
+        "name": "Diseño UX/UI",
+        "image": "/assets/images/certificates/diseño_UXUI.png",
+        "code": null
+    },
+    {
+        "id": 7,
+        "name": "Fundamentos de la IA",
+        "image": "/assets/images/certificates/fundamentos_de_IA.png",
+        "code": null
+    },
+    {
+        "id": 8,
+        "name": "Generacion de prompts para IA",
+        "image": "/assets/images/certificates/generacion_de_prompts_IA.png",
+        "code": null
+    }
+]
