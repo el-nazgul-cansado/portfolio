@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { get_certificates } from '../../helpers/get_data'
 import { Tilt_effect_image } from '../Tilt_effect_image/Tilt_effect_image'
+import { Animated_titles } from '../Animated_titles/Animated-titles'
 import './Certificates.css'
 
 export const Certificates_component = () => {
@@ -65,25 +66,6 @@ export const Certificates_component = () => {
             }
         }, [expandedImage, imageRect, viewportSize]);
 
-/*     useEffect(() => {
-        if (expandedImage && imageRect) {
-            const floatingImg = document.querySelector('.floating_image');
-
-            const targetX = viewportSize.width / 2 - (imageRect.left + imageRect.width / 2);
-            const targetY = viewportSize.height / 2 - (imageRect.top + imageRect.height / 2);
-
-            const scaleX = Math.min(viewportSize.width * 0.8 / imageRect.width, 3);
-            const scaleY = Math.min(viewportSize.height * 0.8 / imageRect.height, 3);
-            const scale = Math.min(scaleX, scaleY);
-
-            requestAnimationFrame(() => {
-                floatingImg.style.transition = 'transform 0.5s ease-in-out';
-                floatingImg.style.transform = `translate(${targetX}px, ${targetY}px) scale(${scale})`;
-                setTimeout(() => setIsExpanded(true), 100);
-            });
-        }
-    }, [expandedImage, imageRect, viewportSize]); */
-
     useEffect(() => {
         if (expandedImage) {
             const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
@@ -105,7 +87,9 @@ export const Certificates_component = () => {
             </section>
                 {expandedImage && imageRect && (
                     <div className={`overlay ${animationClose ? 'animation_close' : ''}`} onClick={handleClose}>
-                        <h1>{expandedImage.name}</h1>
+                        <h2 className="certificate_title">
+                            <Animated_titles content={expandedImage.name} />
+                        </h2>
                         <div
                             className={`floating_image_wrapper ${isExpanded ? 'expanded' : ''}`}
                             onClick={handleClose}
@@ -122,6 +106,9 @@ export const Certificates_component = () => {
                                 }}
                             />
                         </div>
+                        <h3 className={`certificate_code ${animationClose ? 'cortificate_code_close' : ''}`}>
+                            <Animated_titles content={`Código : ${expandedImage.code}`} />
+                        </h3>
                     </div>
                 )}
             </section>

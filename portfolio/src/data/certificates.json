@@ -3,54 +3,54 @@
         "id": 0,
         "name": "Angular",
         "image": "/assets/images/certificates/angular.png",
-        "code": null
+        "code": "65075ad3289e732b0832fb60"
     },
     {
         "id": 1,
         "name": "ReactJs en Coder",
         "image": "/assets/images/certificates/reactJS_coder.png",
-        "code": null
+        "code": "63f55b7a623f25000f0458fb"
     },
     {
         "id": 2,
         "name": "Python",
         "image": "/assets/images/certificates/python.png",
-        "code": null
+        "code": "65c2c5c3b6cd8806d8e4d376"
     },
     {
         "id": 3,
         "name": "Javescript",
         "image": "/assets/images/certificates/javascript.png",
-        "code": null
+        "code": "63ade5d2282a65000e3e0726"
     },
     {
         "id": 4,
         "name": "ReactJS en UTN",
         "image": "/assets/images/certificates/reactJS_UTN.png",
-        "code": null
+        "code": "CER-JWLAVMQI-1141032"
     },
     {
         "id": 5,
         "name": "Desarrollo web",
         "image": "/assets/images/certificates/desarrollo_web.png",
-        "code": null
+        "code": "634fe41da6dc4c000e3d9c5c"
     },
     {
         "id": 6,
         "name": "Diseño UX/UI",
         "image": "/assets/images/certificates/diseño_UXUI.png",
-        "code": null
+        "code": "650d5555e669bc7569efd944"
     },
     {
         "id": 7,
         "name": "Fundamentos de la IA",
         "image": "/assets/images/certificates/fundamentos_de_IA.png",
-        "code": null
+        "code": "9b77747e-4070-47b5-a4f7-e35715064cc6"
     },
     {
         "id": 8,
         "name": "Generacion de prompts para IA",
         "image": "/assets/images/certificates/generacion_de_prompts_IA.png",
-        "code": null
+        "code": "67687c92e9330b55412d1c94"
     }
 ]
