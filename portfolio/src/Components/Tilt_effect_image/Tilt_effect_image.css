@@ -6,7 +6,7 @@
 
 .tilt_effect_image {
     height: 200px;
-    width: 330px;
+    width: 310px;
     transition: transform 0.2s ease;
     transform-style: preserve-3d;
     will-change: transform;

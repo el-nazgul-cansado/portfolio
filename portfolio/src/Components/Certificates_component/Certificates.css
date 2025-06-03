@@ -26,10 +26,27 @@
     animation: overlay_background 0.5s forwards;
 }
 
+.animation_close{
+    animation: overlay_background_close 0.5s forwards;
+}
+
+.floating_image_wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    cursor: zoom-out;
+}
+
 .floating_image {
     position: fixed;
     transform-origin: center center;
-    transition: transform 0.5s ease-in-out, object-fit 0.3s ease-in-out;
+    
 }
 
 .floating_image.expanded {
@@ -48,8 +65,15 @@
         backdrop-filter: blur(5px);
     }
 }
+@keyframes overlay_background_close {
 
-.image_test{
-    height: 200px;
-    width: 400px;
+    0%{
+        background: rgba(0, 0, 0, 0.722);
+        backdrop-filter: blur(5px);
+    }
+
+    100%{
+        background: rgba(255, 255, 255, 0);
+        backdrop-filter: blur(0px);
+    }
 }
