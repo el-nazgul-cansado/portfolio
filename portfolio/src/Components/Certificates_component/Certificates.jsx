@@ -149,6 +149,7 @@ const handleMouseLeaveExpanded = () => {
                     <Tilt_effect_image
                         key={cert.id}
                         {...cert}
+                        expandedImage={expandedImage}
                         onClick={(rect) => handleImageClick(cert, rect)}
                     />
                 ))}

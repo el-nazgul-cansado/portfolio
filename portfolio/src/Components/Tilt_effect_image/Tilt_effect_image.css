@@ -10,6 +10,7 @@
     transition: transform 0.2s ease;
     transform-style: preserve-3d;
     will-change: transform;
+    cursor: pointer;
 }
 
 .tilt_effect_image_7{
@@ -18,4 +19,8 @@
     transition: transform 0.2s ease;
     transform-style: preserve-3d;
     will-change: transform;
+}
+
+.disappear{
+    display: none;
 }

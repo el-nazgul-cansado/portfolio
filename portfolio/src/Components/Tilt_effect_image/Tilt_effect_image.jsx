@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import './Tilt_effect_image.css'
 
-export const Tilt_effect_image = ({ name, image, id, onClick }) => {
+export const Tilt_effect_image = ({ name, image, id, onClick, expandedImage }) => {
     const imgRef = useRef(null);
 
     const handleMouseMove = (e) => {
@@ -17,7 +17,7 @@ export const Tilt_effect_image = ({ name, image, id, onClick }) => {
         const rotateX = ((centerY - y) / centerY) * 15;
         const rotateY = ((x - centerX) / centerX) * 15;
 
-        el.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+        el.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.1)`;
     };
 
     const handleMouseLeave = () => {
@@ -38,7 +38,7 @@ export const Tilt_effect_image = ({ name, image, id, onClick }) => {
         >
             <img
                 ref={imgRef}
-                className={`${id != 7 ? 'tilt_effect_image' : 'tilt_effect_image_7'}`}
+                className={`${id != 7 ? 'tilt_effect_image' : 'tilt_effect_image_7'} ${expandedImage && id === expandedImage.id && 'disappear'}`}
                 onClick={onClick}
                 src={image}
                 alt={name}

@@ -12,12 +12,22 @@
 .title span {
     opacity: 0;
     display: inline-block;
+    transition: transform 0.7s, color 0.35s;
     animation: fadeIn 0.6s forwards;
+}
+
+.title{
+  margin: 4px;
+}
+
+.subtitle{
+  margin: 4px;
 }
 
 .subtitle span {
     opacity: 0;
     display: inline-block;
+    transition: transform 0.7s, color 0.35s;
     animation: fadeInReverse 0.08s forwards;
 }
 
@@ -26,24 +36,28 @@
     width: 400px;
 }
 
+.title span:hover {
+  color: aqua;
+}
+
+.subtitle span:hover {
+  color: aqua;
+}
+
 @keyframes fadeIn {
     to {
       opacity: 1;
-      transform: translateY(0);
     }
     from {
       opacity: 0;
-      transform: translateY(-20px);
     }
 }
 
 @keyframes fadeInReverse {
     to {
       opacity: 1;
-      transform: translateY(0);
     }
     from {
       opacity: 0;
-      transform: translateY(20px);
     }
 }
