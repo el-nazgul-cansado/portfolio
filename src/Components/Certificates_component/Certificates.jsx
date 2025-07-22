@@ -174,7 +174,7 @@ const handleMouseLeaveExpanded = () => {
                     >
                         <img
                             ref={floatingImgRef}
-                            src={expandedImage.image}
+                            src={`${import.meta.env.BASE_URL}${expandedImage.image}`}
                             alt={expandedImage.name}
                             className={`floating_image ${
                                 animationClose ? 'floating_image_close' : ''

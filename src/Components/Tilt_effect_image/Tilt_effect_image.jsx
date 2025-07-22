@@ -40,7 +40,7 @@ export const Tilt_effect_image = ({ name, image, id, onClick, expandedImage }) =
                 ref={imgRef}
                 className={`${id != 7 ? 'tilt_effect_image' : 'tilt_effect_image_7'} ${expandedImage && id === expandedImage.id && 'disappear'}`}
                 onClick={onClick}
-                src={image}
+                src={`${import.meta.env.BASE_URL}${image}`}
                 alt={name}
             />
         </div>

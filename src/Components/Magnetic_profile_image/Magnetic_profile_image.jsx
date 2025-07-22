@@ -86,7 +86,7 @@ export const Magnetic_profile_image = () => {
       <svg viewBox="0 0 400 400" className="circle-svg">
         <defs>
           <pattern id="imagePattern" patternUnits="userSpaceOnUse" width="400" height="400">
-            <image href="/assets/images/profile/juri_profile.jpg" x="0" y="0" width="400" height="400" preserveAspectRatio="xMidYMid slice" />
+            <image href={`${import.meta.env.BASE_URL}/assets/images/profile/juri_profile.jpg`} x="0" y="0" width="400" height="400" preserveAspectRatio="xMidYMid slice" />
           </pattern>
         </defs>
         <path d={pathData} fill="url(#imagePattern)" />
